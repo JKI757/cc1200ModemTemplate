@@ -1530,10 +1530,10 @@
     (property "Reference" "J1" (id 0) (at 213.106 74.0801 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "Conn_Coaxial" (id 1) (at 207.772 90.805 90)
+    (property "Value" "" (id 1) (at 207.772 90.805 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Connector_Coaxial:SMA_Amphenol_901-143_Horizontal" (id 2) (at 210.566 75.057 0)
+    (property "Footprint" "" (id 2) (at 210.566 75.057 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "LCSC: C2693811" (id 3) (at 210.566 75.057 0)
@@ -2224,6 +2224,22 @@
     (pin "2" (uuid 4946ac45-34f3-4019-95fa-a409e690e950))
   )
 
+  (symbol (lib_id "power:GND") (at 224.282 49.784 0) (unit 1)
+    (in_bom yes) (on_board yes)
+    (uuid bf6d775b-672a-46e5-bd45-fb6d8187cfea)
+    (property "Reference" "#PWR?" (id 0) (at 224.282 56.134 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "GND" (id 1) (at 224.409 54.1782 0))
+    (property "Footprint" "" (id 2) (at 224.282 49.784 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (id 3) (at 224.282 49.784 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid e9604c21-a77b-436c-b8a9-be856e54ca15))
+  )
+
   (symbol (lib_id "power:GND") (at 133.858 70.739 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid c12145fa-1266-489f-8a2e-91bf89a87952)
@@ -2527,11 +2543,14 @@
     (path "/b9b4754b-01cf-4293-8137-dfdbc60cd9a8"
       (reference "#PWR0124") (unit 1) (value "GND") (footprint "")
     )
+    (path "/bf6d775b-672a-46e5-bd45-fb6d8187cfea"
+      (reference "#PWR?") (unit 1) (value "GND") (footprint "")
+    )
     (path "/e9401fd4-c572-4b85-a808-d25b6191ddb8"
-      (reference "C10") (unit 1) (value "12p") (footprint "Capacitor_SMD:C_0201_0603Metric")
+      (reference "C10") (unit 1) (value "12p") (footprint "Capacitor_SMD:C_0603_1608Metric")
     )
     (path "/63cecbcb-a4a2-43fe-8a97-acdbd1903604"
-      (reference "C11") (unit 1) (value "12p") (footprint "Capacitor_SMD:C_0201_0603Metric")
+      (reference "C11") (unit 1) (value "12p") (footprint "Capacitor_SMD:C_0603_1608Metric")
     )
     (path "/bf4d2769-3e7f-4d1b-983b-b4c7bc8ab936"
       (reference "C15") (unit 1) (value "1.5n") (footprint "Capacitor_SMD:C_0805_2012Metric")
@@ -2546,13 +2565,13 @@
       (reference "C24") (unit 1) (value "47n") (footprint "Capacitor_SMD:C_0805_2012Metric")
     )
     (path "/48aa441c-2fc6-43bf-b712-a7de6e65103d"
-      (reference "C25") (unit 1) (value "47n") (footprint "Capacitor_SMD:C_0201_0603Metric")
+      (reference "C25") (unit 1) (value "47n") (footprint "Capacitor_SMD:C_0603_1608Metric")
     )
     (path "/d51b6175-6cc6-4a96-9603-52c532709165"
       (reference "C26") (unit 1) (value "47n") (footprint "Capacitor_SMD:C_0805_2012Metric")
     )
     (path "/7fc6832d-554d-4ce3-b19f-8c72aa94229e"
-      (reference "C27") (unit 1) (value "10n") (footprint "Capacitor_SMD:C_01005_0402Metric")
+      (reference "C27") (unit 1) (value "10n") (footprint "Capacitor_SMD:C_0402_1005Metric")
     )
     (path "/3eda0a96-5e72-47fe-adcc-05505b64794f"
       (reference "C28") (unit 1) (value "47n") (footprint "Capacitor_SMD:C_0805_2012Metric")
@@ -2603,7 +2622,7 @@
       (reference "C201") (unit 1) (value "5.1p") (footprint "Capacitor_SMD:C_0603_1608Metric")
     )
     (path "/04cb3c7b-c7b5-45cc-ae7b-2ef469daf5ab"
-      (reference "J1") (unit 1) (value "Conn_Coaxial") (footprint "Connector_Coaxial:SMA_Amphenol_901-143_Horizontal")
+      (reference "J1") (unit 1) (value "Conn_Coaxial") (footprint "Connector_Coaxial:HJ_Tech_SMA_Horizontal_Board_Edge_RF")
     )
     (path "/6925ae6e-508f-4623-a141-b4202f2a27bf"
       (reference "J3002") (unit 1) (value "RFShield_OnePiece") (footprint "RF_Shielding:Wuerth_36103255_25x25mm")
